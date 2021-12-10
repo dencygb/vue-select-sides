@@ -7,5 +7,8 @@ module.exports = {
       localeDir: "locales",
       enableInSFC: false
     }
+  },
+  configureWebpack: config => {
+    config.externals = ['vue-i18n']
   }
 };
